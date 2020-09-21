@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Dev Woo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="23andfour logo" class="logo">
+
+            <!-- nav defines a set of navigation links in the page-->
+            <nav> 
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <!-- making the class like this since we will want to choose between desktop and mobile views for nav options-->
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <!-- id and class are there for javascript later to open and close. (We didnt need a tag since there will be no link) -->
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit">
+                    </li>
+                    <!-- this is a list of links created -->
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!-- Section semantic elements are used to define main portions of the webpage (intro screens)-->
+    <section>
+        <!-- adding class so we can change image size and position later-->
+        <img src="images/server.svg" alt="server graphic" class="server">
+    <!-- h1-h6 means headings reserved for special lines of texts-->
+        <h1> Web Hosting for Modern Era</h1>
+        <p class="subhead">Go serverless and pay only for what you use</p>
+        <!-- note: classes can be seperated by space and you can have multiples of them (unlike ids)-->
+        <img src="images/scroll.svg" alt="scroll" class="scroll hide-mobile show-desktop">
+    </section>
+    </div> <!-- container div end -->
+
+    <div class="blue-container">
+        <!-- adding the previous container class into the blue-container class -->
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="icon1">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="icon2">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p> 
+                </li>
+                <li><img src="images/icon-3.svg" alt="icon3">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=grey-container>
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <!-- this is just for a user testimonial, following tags allow us to format them together. -->
+                        <img src="images/user1.png" alt="user testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/user2.png" alt="user2 testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>Start your Free Trial now!</h1>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="white logo" class="logo">
+                </a>
+                    <p class="address">Melrose Place, 90210<br>USA</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
